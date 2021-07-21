@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="09/14/20||00:19:38" using="Simscape Multibody Link Version 7.0" from="SolidWorks 26.4.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="link" uid="link" version="173">
+<AssemblyFile name="link.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="mass-3" uid="mass-3" entityUid="mass*:*Default">
+<Transform>
+<Rotation>0.088078051880242758 0.99611357624368402 0 -0.99611357624368402 0.088078051880242758 0 0 0 1</Rotation>
+<Translation>0.1707291783245701 0.29665017405729111 0.099432423908787412</Translation>
+</Transform>
+</Instance>
+<Instance name="mass-2" uid="mass-2" entityUid="mass*:*Default">
+<Transform>
+<Rotation>0.82031408785377313 0.5719132777516468 0 -0.5719132777516468 0.82031408785377313 0 0 0 1</Rotation>
+<Translation>0.15399434846732402 0.48591175354359106 0.12143242390878742</Translation>
+</Transform>
+</Instance>
+<Instance name="mass-1" uid="mass-1" entityUid="mass*:*Default">
+<Transform>
+<Rotation>0.76715736643434451 -0.6414589426654842 0 0.6414589426654842 0.76715736643434451 0 0 0 0.99999999999999989</Rotation>
+<Translation>0.045330825694511162 0.33005207685137417 0.14343242390878744</Translation>
+</Transform>
+</Instance>
+<Instance name="pend-1" uid="pend-1" entityUid="pend*:*Default">
+<Transform>
+<Rotation>0.6414589426654842 0.76715736643434451 0 -0.76715736643434451 0.6414589426654842 0 0 0 0.99999999999999989</Rotation>
+<Translation>-0.027549124116751617 0.26911347729815316 0.16343242390878743</Translation>
+</Transform>
+</Instance>
+<Instance name="pend-2" uid="pend-2" entityUid="pend*:*Default">
+<Transform>
+<Rotation>0.82031408785377313 0.5719132777516468 0 -0.5719132777516468 0.82031408785377313 0 0 0 1</Rotation>
+<Translation>0.099662587080917589 0.40798191519748261 0.14143242390878744</Translation>
+</Transform>
+</Instance>
+<Instance name="pend-4" uid="pend-4" entityUid="pend*:*Default">
+<Transform>
+<Rotation>0.9842231294354884 0.17693171418435372 0 -0.17693171418435372 0.9842231294354884 0 0 0 0.99999999999999989</Rotation>
+<Translation>0.15392066547705649 0.20314897676091967 0.097432423908787411</Translation>
+</Transform>
+</Instance>
+<Instance name="pend-3" uid="pend-3" entityUid="pend*:*Default">
+<Transform>
+<Rotation>-0.99611357624368391 0.088078051880242605 0 -0.088078051880242605 -0.99611357624368391 0 0 0 1</Rotation>
+<Translation>0.16236176339594707 0.39128096380044114 0.11943242390878742</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-1</Uid>
+</InstancePath>
+<Position>0 0.095000000000000057 0.0020000000000000018</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mass-1</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-1</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-2</Uid>
+</InstancePath>
+<Position>0 0 0.0020000000000000018</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-2</Uid>
+</InstancePath>
+<Position>0 -0.094999999999999973 0.0020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mass-1</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-2</Uid>
+</InstancePath>
+<Position>0 0.095000000000000029 0.0020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-3</Uid>
+</InstancePath>
+<Position>0 -0.095000000000000029 0.0020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-2</Uid>
+</InstancePath>
+<Position>0 0.095000000000000029 0.0020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mass-2</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-2</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-3</Uid>
+</InstancePath>
+<Position>0 -0.095000000000000029 0.0020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mass-2</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-3</Uid>
+</InstancePath>
+<Position>0 0 0.0020000000000000018</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-4</Uid>
+</InstancePath>
+<Position>0 0.095000000000000029 0.0020000000000000018</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mass-3</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pend-3</Uid>
+</InstancePath>
+<Position>0 0.095000000000000084 0.0020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mass-3</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-3</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-4</Uid>
+</InstancePath>
+<Position>0 0 0.0020000000000000018</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Parallel name="Parallel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-1</Uid>
+</InstancePath>
+<Position>-0.0049999999999999489 0.10000000000000003 0.0020000000000000018</Position>
+<Axis>-1 -1.6653345369377348e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-1</Uid>
+</InstancePath>
+<Position>-0.025000000000000022 0.024999999999999994 0.01999999999999999</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Parallel name="Parallel3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-2</Uid>
+</InstancePath>
+<Position>-0.0050000000000000322 0.10000000000000009 0.0020000000000000018</Position>
+<Axis>-1.0000000000000002 -1.6653345369377348e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-2</Uid>
+</InstancePath>
+<Position>-0.02500000000000005 0.025000000000000078 0.01999999999999999</Position>
+<Axis>-1 -2.7755575615628914e-16 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Parallel name="Parallel4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pend-3</Uid>
+</InstancePath>
+<Position>0.0049999999999999767 0.10000000000000003 0.0020000000000000018</Position>
+<Axis>1.0000000000000002 1.2490009027033011e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-3</Uid>
+</InstancePath>
+<Position>-0.025000000000000022 -0.025000000000000022 0.020000000000000004</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="mass" uid="mass*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="mass.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.29999999999999999</Mass>
+<CenterOfMass>0 0 0.01</CenterOfMass>
+<Inertia>7.2814230797147423e-05 7.2814230797147423e-05 0.00012562846159429485 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="mass_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="pend" uid="pend*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="pend.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0</Mass>
+<CenterOfMass>0 0.00060067676762278139 0.001</CenterOfMass>
+<Inertia>0 0 0 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="pend_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
